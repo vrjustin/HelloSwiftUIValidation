@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1AA24A6A2C7F45E00093C660 /* HelloValidationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA24A692C7F45E00093C660 /* HelloValidationApp.swift */; };
-		1AA24A6C2C7F45E00093C660 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA24A6B2C7F45E00093C660 /* ContentView.swift */; };
 		1AA24A6E2C7F45E10093C660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA24A6D2C7F45E10093C660 /* Assets.xcassets */; };
 		1AA24A712C7F45E10093C660 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA24A702C7F45E10093C660 /* Preview Assets.xcassets */; };
+		1AA24A782C7F46050093C660 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA24A772C7F46050093C660 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AA24A662C7F45E00093C660 /* HelloValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA24A692C7F45E00093C660 /* HelloValidationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloValidationApp.swift; sourceTree = "<group>"; };
-		1AA24A6B2C7F45E00093C660 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AA24A6D2C7F45E10093C660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA24A702C7F45E10093C660 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1AA24A772C7F46050093C660 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				1AA24A692C7F45E00093C660 /* HelloValidationApp.swift */,
-				1AA24A6B2C7F45E00093C660 /* ContentView.swift */,
+				1AA24A772C7F46050093C660 /* LoginView.swift */,
 				1AA24A6D2C7F45E10093C660 /* Assets.xcassets */,
 				1AA24A6F2C7F45E10093C660 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AA24A6C2C7F45E00093C660 /* ContentView.swift in Sources */,
+				1AA24A782C7F46050093C660 /* LoginView.swift in Sources */,
 				1AA24A6A2C7F45E00093C660 /* HelloValidationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
