@@ -11,6 +11,7 @@
 		1AA24A6E2C7F45E10093C660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA24A6D2C7F45E10093C660 /* Assets.xcassets */; };
 		1AA24A712C7F45E10093C660 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA24A702C7F45E10093C660 /* Preview Assets.xcassets */; };
 		1AA24A782C7F46050093C660 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA24A772C7F46050093C660 /* LoginView.swift */; };
+		1AA24A7B2C7F47960093C660 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA24A7A2C7F47960093C660 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1AA24A6D2C7F45E10093C660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA24A702C7F45E10093C660 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1AA24A772C7F46050093C660 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1AA24A7A2C7F47960093C660 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		1AA24A682C7F45E00093C660 /* HelloValidation */ = {
 			isa = PBXGroup;
 			children = (
+				1AA24A792C7F477E0093C660 /* Extensions */,
 				1AA24A692C7F45E00093C660 /* HelloValidationApp.swift */,
 				1AA24A772C7F46050093C660 /* LoginView.swift */,
 				1AA24A6D2C7F45E10093C660 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				1AA24A702C7F45E10093C660 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AA24A792C7F477E0093C660 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1AA24A7A2C7F47960093C660 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AA24A782C7F46050093C660 /* LoginView.swift in Sources */,
+				1AA24A7B2C7F47960093C660 /* String+Extensions.swift in Sources */,
 				1AA24A6A2C7F45E00093C660 /* HelloValidationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
