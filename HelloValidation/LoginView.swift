@@ -7,50 +7,54 @@
 
 import SwiftUI
 
-struct LoginFormError {
+struct LoginState {
     var email: String = ""
     var password: String = ""
+    var emailError: LoginError?
+    var passwordError: LoginError?
+    
+    mutating func clearErrors() {
+        emailError = nil
+        passwordError = nil
+    }
+    
+    mutating func isValid() -> Bool {
+        clearErrors()
+        
+        if email.isEmpty {
+            emailError = LoginError.emailEmpty
+        } else if !email.isValidEmail {
+            emailError = LoginError.emailInvalid
+        }
+        
+        if password.isEmpty {
+            passwordError = LoginError.passwordEmpty
+        }
+        
+        return emailError == nil && passwordError == nil
+    }
 }
 
 struct LoginView: View {
     
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var loginFormError = LoginFormError()
-    
-    private func clearForm() {
-        loginFormError = LoginFormError()
-    }
-    
-    var isFormValid: Bool {
-        clearForm()
-        if email.isEmpty {
-            loginFormError.email = "Email is required!"
-        } else if !email.isValidEmail {
-            loginFormError.email = "Email has invalid format!"
-        }
-        
-        if password.isEmpty {
-            loginFormError.password = "Password is required!"
-        }
-        
-        return loginFormError.email.isEmpty && loginFormError.password.isEmpty
-    }
+    @State private var loginState = LoginState()
     
     var body: some View {
         Form {
-            TextField("Email", text: $email)
+            TextField("Email", text: $loginState.email)
                 .textInputAutocapitalization(.never)
-            if !loginFormError.email.isEmpty {
-                Text(loginFormError.email).font(.caption)
+            if let emailError = loginState.emailError {
+                Text(emailError.localizedDescription)
             }
-            SecureField("Password", text: $password)
-            if !loginFormError.password.isEmpty {
-                Text(loginFormError.password).font(.caption)
+            
+            SecureField("Password", text: $loginState.password)
+            if let passwordError = loginState.passwordError {
+                Text(passwordError.localizedDescription)
             }
+
             Button("Login") {
-                if isFormValid {
-                    //submit the form to the service.
+                if loginState.isValid() {
+                    //perform login.
                 }
             }
         }

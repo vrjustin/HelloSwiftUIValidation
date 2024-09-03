@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6D99532C872ECC00562D09 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99522C872ECC00562D09 /* LoginError.swift */; };
 		1AA24A6A2C7F45E00093C660 /* HelloValidationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA24A692C7F45E00093C660 /* HelloValidationApp.swift */; };
 		1AA24A6E2C7F45E10093C660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA24A6D2C7F45E10093C660 /* Assets.xcassets */; };
 		1AA24A712C7F45E10093C660 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA24A702C7F45E10093C660 /* Preview Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6D99522C872ECC00562D09 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		1AA24A662C7F45E00093C660 /* HelloValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA24A692C7F45E00093C660 /* HelloValidationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloValidationApp.swift; sourceTree = "<group>"; };
 		1AA24A6D2C7F45E10093C660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6D99512C872EA300562D09 /* CustomErrors */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D99522C872ECC00562D09 /* LoginError.swift */,
+			);
+			path = CustomErrors;
+			sourceTree = "<group>";
+		};
 		1AA24A5D2C7F45E00093C660 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 		1AA24A682C7F45E00093C660 /* HelloValidation */ = {
 			isa = PBXGroup;
 			children = (
+				1A6D99512C872EA300562D09 /* CustomErrors */,
 				1AA24A792C7F477E0093C660 /* Extensions */,
 				1AA24A692C7F45E00093C660 /* HelloValidationApp.swift */,
 				1AA24A772C7F46050093C660 /* LoginView.swift */,
@@ -150,6 +161,7 @@
 			files = (
 				1AA24A782C7F46050093C660 /* LoginView.swift in Sources */,
 				1AA24A7B2C7F47960093C660 /* String+Extensions.swift in Sources */,
+				1A6D99532C872ECC00562D09 /* LoginError.swift in Sources */,
 				1AA24A6A2C7F45E00093C660 /* HelloValidationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
